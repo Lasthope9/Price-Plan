@@ -1,0 +1,109 @@
+body {
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(46, 42, 42);
+  scroll-behavior: smooth;
+}
+h1 {
+  text-align: center;
+  font: 70px bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: azure;
+}
+h2 {
+  color: azure;
+  margin: 10px;
+}
+h3 {
+  color: azure;
+  margin: 1px;
+}
+hr {
+  margin: 15px;
+}
+.plans {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.wrapper {
+  border-radius: 20px;
+  border: 2px solid rgb(240, 234, 234);
+  height: 151px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.container {
+  flex: 1;
+  margin: 20px;
+  text-align: center;
+  border: 1px solid rgb(80, 66, 66);
+  width: 200px;
+  height: 300px;
+  padding: 10px;
+  white-space: nowrap;
+}
+.container > * {
+  flex: 0 0 200px;
+}
+.container:hover {
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-25px);
+  transition: ease-in-out;
+  opacity: 0.2s;
+}
+.container:hover ~ .container {
+  filter: blur(6px);
+  transform: translateY(10px);
+  opacity: 0.1s;
+}
+.image {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  margin: 4px;
+}
+.text {
+  color: azure;
+  text-align: justify;
+  margin: 3px;
+  font-size: smaller;
+}
+.price {
+  color: rgb(141, 141, 141);
+  margin: 10px;
+}
+span {
+  color: rgb(226, 255, 255);
+  margin: 0;
+  font-size: xx-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.button {
+  color: azure;
+  background-color: green;
+  letter-spacing: 1.5px;
+  border-radius: 20px;
+  width: 60%;
+  height: 10%;
+  margin: 6px;
+  cursor: pointer;
+}
+.button:active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+footer {
+  text-align: center;
+  color: azure;
+  margin: 30px;
+  font-size: xx-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media (max-width: 768px) {
+/* Mobile Support */
+}
+
